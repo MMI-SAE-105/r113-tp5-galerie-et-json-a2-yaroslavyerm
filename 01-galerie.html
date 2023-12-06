@@ -85,6 +85,18 @@
         perspiciatis dolore, magnam iure rem debitis! Molestiae consectetur
         numquam quo, modi distinctio esse nam soluta.
     </p>
+    <img src="https://picsum.photos/id/236/200/300" alt="Image 1"
+        @click="varImage='https://picsum.photos/id/236/400/300'" 
+        class="miniature"/>
+    <img src="https://picsum.photos/id/237/200/300" alt="Image 2"
+        @click="varImage='https://picsum.photos/id/237/400/300'" 
+        class="miniature"/>
+    <img src="https://picsum.photos/id/238/200/300" alt="Image 3"
+        @click="varImage='https://picsum.photos/id/238/400/300'" 
+        class="miniature"/>
+    <img src="https://picsum.photos/id/239/200/300" alt="Image 4"
+        @click="varImage='https://picsum.photos/id/239/400/300'" 
+        class="miniature"/>
     <div class="overlay"
     x-show="varImage"
     @click="varImage = null"
