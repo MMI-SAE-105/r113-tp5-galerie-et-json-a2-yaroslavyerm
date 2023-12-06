@@ -6,6 +6,21 @@
     <title>Gallerie</title>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <style>
+body{
+    background-color: #f7f7f7;
+}
+h1{
+    font-family: sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #131313;
+}
+p{
+    font-family: sans-serif;
+    font-size: 1rem;
+    text-align: left;
+    color: #131313;
+}
 .overlay {
     /* Sit on top of the page content */
     position: fixed;
@@ -79,6 +94,8 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2);
     grid-gap: 5px;
+    background-color: #dddada;
+    padding: 1rem;
 }
 .miniature{
     width: 100%;
@@ -97,17 +114,17 @@
         numquam quo, modi distinctio esse nam soluta.
     </p>
     <div class="miniatures">
-    <img src="https://picsum.photos/id/236/200/300" alt="Image 1"
-        @click="varImage='https://picsum.photos/id/236/200/300'" 
+    <img src="img/petit/image 1_petit.jpg" alt="Image 1"
+        @click="varImage='img/grand/image 1_grand.jpg'" 
         class="miniature"/>
-    <img src="https://picsum.photos/id/237/200/300" alt="Image 2"
-        @click="varImage='https://picsum.photos/id/237/200/300'" 
+    <img src="img/petit/image 2_petit.jpg" alt="Image 2"
+        @click="varImage='img/grand/image 2_grand.jpg'" 
         class="miniature"/>
-    <img src="https://picsum.photos/id/238/200/300" alt="Image 3"
-        @click="varImage='https://picsum.photos/id/238/200/300'" 
+    <img src="img/petit/image 3_petit.jpg" alt="Image 3"
+        @click="varImage='img/grand/image 3_grand.jpg'" 
         class="miniature"/>
-    <img src="https://picsum.photos/id/239/200/300" alt="Image 4"
-        @click="varImage='https://picsum.photos/id/239/200/300'" 
+    <img src="img/petit/image 4_petit.jpg" alt="Image 4"
+        @click="varImage='img/grand/image 4_grand.jpg'" 
         class="miniature"/>
     </div>
     <div class="overlay"
