@@ -77,7 +77,7 @@
     </style>
 </head>
 <body x-data="{
-    myVariable: 'https://picsum.photos/id/238/400/300'
+    varImage: 'https://picsum.photos/id/238/400/300'
 }">
     <h1>Galerie</h1>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -85,8 +85,10 @@
         perspiciatis dolore, magnam iure rem debitis! Molestiae consectetur
         numquam quo, modi distinctio esse nam soluta.
     </p>
-    <div class="overlay">
-        <figure><img :src="myVariable" ></figure>
+    <div class="overlay"
+    x-show="varImage"
+    @click="varImage = null">
+        <figure><img :src="varImage" ></figure>
     </div>
 </body>
 </html>
