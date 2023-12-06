@@ -7,6 +7,27 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
-    
+    <h1>JSON</h1>
+    <ul x-data="{
+        donnees: [
+            {
+            nom: 'Jean',
+            projet: 'Alpine.js',
+            url: 'https://alpinejs.dev/'
+             },
+            {
+            nom: 'Maxime',
+            projet: 'Tailwind CSS',
+            url: 'https://tailwindcss.com/'
+            },
+            {
+            nom: 'Adam',
+            projet: 'Laravel',
+            url: 'https://laravel.com/'
+            }
+        ],
+  }">
+  
+  </ul>
 </body>
 </html>
