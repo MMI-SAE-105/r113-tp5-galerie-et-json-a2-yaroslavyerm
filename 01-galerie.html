@@ -74,6 +74,17 @@
     /* Height auto for keeping the ratio */
     height: auto;
 }
+.miniatures {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2);
+    grid-gap: 0;
+}
+.miniature{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
     </style>
 </head>
 <body x-data="{
@@ -85,6 +96,7 @@
         perspiciatis dolore, magnam iure rem debitis! Molestiae consectetur
         numquam quo, modi distinctio esse nam soluta.
     </p>
+    <div class="miniatures">
     <img src="https://picsum.photos/id/236/200/300" alt="Image 1"
         @click="varImage='https://picsum.photos/id/236/400/300'" 
         class="miniature"/>
@@ -97,6 +109,7 @@
     <img src="https://picsum.photos/id/239/200/300" alt="Image 4"
         @click="varImage='https://picsum.photos/id/239/400/300'" 
         class="miniature"/>
+    </div>
     <div class="overlay"
     x-show="varImage"
     @click="varImage = null"
